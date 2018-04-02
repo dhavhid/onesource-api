@@ -1,0 +1,16 @@
+{
+  "autos": [
+    {
+      "marca": "toyota",
+      "modelos": ["yaris","corolla"]
+    },
+    {
+      "marca": "honda",
+      "modelos": ["civic","fit"]
+    },
+    {
+      "marca": "nissan",
+      "modelos": ["sentra","versa"]
+    }
+  ]
+}

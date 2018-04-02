@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .container {
+            margin: 10px 15px;
+            padding: 5%;
+        }
+        .column {
+            width: 30%;
+            padding: 0px 10px;
+            float: left;
+        }
+        .clearfix {clear: both;}
+
+        /* for small tablets and phones */
+        @media only screen and (max-width: 768px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">columna 1</div>
+        <div class="column">columna 2</div>
+        <div class="column">columna 3</div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //close all content divs first
+        $('li div').hide('slow');
+        // listen to the click on each h3 heading and show the next DOM element, which in this case is div
+        $('li h3').click(function(){
+            // hide all content div first.
+            $('li div').hide('slow');
+            // show content div within this li element.
+            $(this).next().show();
+        });
+    });
+</script>
+
+<style>
+    .green{border: 1px solid green;}
+    .red{border: 1px solid red;}
+    label{display: block;}
+</style>
+
+<form name="test" id="test" method="post" action="some_action.php">
+    <label for="value1">
+        Value 1
+        <input type="text" placeholder="value 1" id="value1" name="value1">
+    </label>
+    <label for="value2">
+        Value 2
+        <input type="text" placeholder="value 2" id="value2" name="value2">
+    </label>
+    <label for="value3">
+        Value 3
+        <input type="text" placeholder="value 3" id="value3" name="value3">
+    </label>
+    <input type="button" onClick="validate();" value="Validate">
+</form>
+<script type="text/javascript">
+    var reg = new RegExp('/^\d+$/');
+    var v1 = document.getElementById('value1');
+    var v2 = document.getElementById('value2');
+    var v3 = document.getElementById('value3');
+    function validate() {
+        if (reg.test(v1.value)) {
+            v1.className = 'green';
+        } else { v1.className = 'red'; }
+
+        if (reg.test(v2.value)) {
+            v2.className = 'green';
+        } else { v2.className = 'red'; }
+
+        if (reg.test(v3.value)) {
+            v3.className = 'green';
+        } else { v3.className = 'red'; }
+
+        return false;
+    }
+</script>

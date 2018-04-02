@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: OneSource
+        psr4_prefix: OneSource
+        src_path: app

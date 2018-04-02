@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>4dea66a3-bd7d-44e1-a858-839e16f1da7a.schema:onesource.public</OriginalElement>
+  <nodes>
+    <node x="1879.0" y="0.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.migrations</node>
+    <node x="0.0" y="708.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.clients</node>
+    <node x="1046.5" y="0.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.users</node>
+    <node x="211.03472222222226" y="410.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.attorneys_doctors</node>
+    <node x="1167.0" y="245.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.logs</node>
+    <node x="916.0" y="234.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.sessions</node>
+    <node x="505.0347222222223" y="465.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.regions</node>
+    <node x="290.0" y="1668.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.passengers</node>
+    <node x="1423.0" y="0.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.bodyparts</node>
+    <node x="1619.0" y="0.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.password_resets</node>
+    <node x="40.034722222222285" y="465.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.reasons</node>
+    <node x="290.6597222222223" y="0.0">4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.requesting_offices</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.clients" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.requesting_offices">
+      <point x="272.1875" y="-455.0" />
+      <point x="707.6875" y="668.0" />
+      <point x="494.5347222222223" y="668.0" />
+      <point x="494.5347222222223" y="390.0" />
+      <point x="615.2847222222223" y="390.0" />
+      <point x="139.125" y="180.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.clients" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.attorneys_doctors">
+      <point x="-54.4375" y="-455.0" />
+      <point x="381.0625" y="688.0" />
+      <point x="399.2847222222223" y="688.0" />
+      <point x="62.75" y="114.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.attorneys_doctors" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.requesting_offices">
+      <point x="0.0" y="-114.0" />
+      <point x="-139.125" y="180.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.logs" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.users">
+      <point x="0.0" y="-92.0" />
+      <point x="1272.5" y="209.0" />
+      <point x="1204.75" y="209.0" />
+      <point x="52.75" y="92.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.clients" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.regions">
+      <point x="381.0625" y="-455.0" />
+      <point x="816.5625" y="658.0" />
+      <point x="580.5347222222223" y="658.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.clients" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.reasons">
+      <point x="-272.1875" y="-455.0" />
+      <point x="163.3125" y="688.0" />
+      <point x="153.28472222222229" y="688.0" />
+      <point x="37.75" y="59.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.passengers" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.clients">
+      <point x="0.0" y="-136.0" />
+      <point x="0.0" y="455.0" />
+    </edge>
+    <edge source="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.sessions" target="4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.users">
+      <point x="0.0" y="-103.0" />
+      <point x="1031.5" y="209.0" />
+      <point x="1099.25" y="209.0" />
+      <point x="-52.75" y="92.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3168367346938776" x="1051.0" y="969.9999999999999" />
+  <SelectedNodes>
+    <node>4dea66a3-bd7d-44e1-a858-839e16f1da7a.table:onesource.public.migrations</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
