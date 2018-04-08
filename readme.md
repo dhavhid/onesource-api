@@ -25,3 +25,9 @@ composer install
 ```
 php artisan serve
 ```
+
+# Built With
+
+- [Laravel](https://laravel.com/): The PHP Framework For Web Artisans.
+- [PostgreSQL](https://www.postgresql.org/): PostgreSQL is a powerful, open source object-relational database system.
+- [Nginx](https://nginx.org/): An HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server.
