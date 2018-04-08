@@ -31,3 +31,7 @@ php artisan serve
 - [Laravel](https://laravel.com/): The PHP Framework For Web Artisans.
 - [PostgreSQL](https://www.postgresql.org/): PostgreSQL is a powerful, open source object-relational database system.
 - [Nginx](https://nginx.org/): An HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server.
+
+# Author
+
+- David Martinez - Initial work - [RM Coding](https://rmcoding.com/)
