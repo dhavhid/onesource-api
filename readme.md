@@ -16,4 +16,12 @@ Run the following commands to install all dependencies.
 npm install
 ```
 
+```
+composer install
+```
 
+### Run the Application
+
+```
+php artisan serve
+```
